@@ -1,0 +1,9 @@
+Colonne d'interesse: Owner, 
+                     Model Material 1 Usage,
+                     Support Material 1 Usage
+
+Flow: filter by date(from [date]),
+      for user in research_line sum Model Material 1 Usage + Support Material 1 Usage,
+      sum research_line total_material_usage, 
+      extract material_usage_percentage on grand_total
+      

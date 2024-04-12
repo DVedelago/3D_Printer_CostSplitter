@@ -7,25 +7,37 @@ using [Data_Structure] to assign Users to PIs
 
 """
 
-HHCM_Tsagarakis = [
-                    'Akash_Singh',
-                    'aksingh',
-                    'cburchielli',
-                    'edb',
-                    'ggarofalo',
-                    'Giovanni_Garofalo',
-                    'gsofia',
-                    'Ioannis_Sarakoglou',
-                    'Jorn_Malzahn',
-                    'LBaccelliere',
-                    'Navvab',
-                    'Pietro_Gurnari',
-                    'scarrozzo',
-                    'Yifan',
-                    'yizhang'
-                ]
+class ResearchLine:
+    Owners[]
+    
+    def match_owner_to_PI(owner):
+        if owner in Owners:
+            
 
-ADVR_Caldwell = [
+
+
+
+class HHCM_Tsagarakis:
+    Owners = [
+                        'Akash_Singh',
+                        'aksingh',
+                        'cburchielli',
+                        'edb',
+                        'ggarofalo',
+                        'Giovanni_Garofalo',
+                        'gsofia',
+                        'Ioannis_Sarakoglou',
+                        'Jorn_Malzahn',
+                        'LBaccelliere',
+                        'Navvab',
+                        'Pietro_Gurnari',
+                        'scarrozzo',
+                        'Yifan',
+                        'yizhang'
+                    ]
+
+class ADVR_Caldwell:
+    Owners = [
                     'alperen_acemoglu',
                     'asantangelo',
                     'Carlo_Rizzardo',

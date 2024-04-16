@@ -1,0 +1,103 @@
+""" 
+
+
+Defining the Research lines between which the costs must be split. 
+using [Data_Structure] to assign Users to PIs
+
+
+"""
+
+
+HHCM_Tsagarakis = {
+    'owners': [
+        'Akash_Singh',
+        'aksingh',
+        'cburchielli',
+        'edb',
+        'ggarofalo',
+        'Giovanni_Garofalo',
+        'gsofia',
+        'Ioannis_Sarakoglou',
+        'Jorn_Malzahn',
+        'LBaccelliere',
+        'Navvab',
+        'Pietro_Gurnari',
+        'scarrozzo',
+        'Yifan',
+        'yizhang'
+    ],
+    'total_cm3': 0
+}
+
+
+ADVR_Caldwell = {
+    'owners': [
+        'alperen_acemoglu',
+        'asantangelo',
+        'Carlo_Rizzardo',
+        'cdinatali',
+        'DPARK',
+        'Federico_Mariano',
+        'federico_allione',
+        'fnozadheravi',
+        'Jesús_Ortiz',
+        'JOrtiz',
+        'ksawant',
+        'msposito',
+        'psencandan',
+        'rgagliardi',
+        'Roberto_Pitzalis'
+    ],
+    'total_cm3': 0
+}
+
+ADVRF_Cordasco = {
+    'owners': [
+        'Yussef_Hassanien',
+        'dvedelago',
+        'mmigliorini'
+    ],
+    'total_cm3': 0
+}
+
+DLS_Semini = {
+    'owners': [
+        'Giacomo_Mazzaglia',
+        'Victor_Barasuol',
+        'VBarasuol',
+        'Sinan_Emre',
+        'Matteo_Villa',
+        'mavilla'
+    ],
+    'total_cm3': 0
+}
+
+HRII_Ajoudani = {
+    'owners': [
+        'Robin_Arbaud',
+        'Fran_Ruiz',
+        'pbalatti',
+        'ggiardini',
+        'Pietro_Balatti',
+        'fruiz'
+    ],
+    'total_cm3': 0
+}
+
+IRF_Canali = {
+    'owners':[
+        'Iacopo_Longinotti',
+        'carlo_canali',
+        'Lizhou_Xu'
+    ],
+    'total_cm3': 0
+}
+
+res_lines_list = [
+    IRF_Canali,
+    HRII_Ajoudani,
+    DLS_Semini,
+    ADVRF_Cordasco,
+    ADVR_Caldwell,
+    HHCM_Tsagarakis
+]

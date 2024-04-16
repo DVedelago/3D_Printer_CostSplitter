@@ -1,8 +1,8 @@
 import pandas as pd
 import datetime as dt
-from 'user_to_PI-Line_dict' import Research_Lines_list
+import research_lines_descriptors as rld
 
-print(Research_Lines_list)
+#print(rld.res_lines_list)
 
 #################################################
 # Reading the dataset with Pandas read_* method #
@@ -40,10 +40,10 @@ filtered_pddf = pddf.loc[(pddf['Date'] >= date_from_datetype) & (pddf['Date'] < 
 
 grand_total = 0
 for index, row in filtered_pddf.iterrows():
-    # print(row)
-    # print(row['ABS'], ' ', row['QSR'])
+    for res_line in rld.res_lines_list:
+        if row['Owner'] in res_line['owners']:
+            print("porcodio")
 
-    for res_line in Rese
 
     grand_total = grand_total+row['ABS']+row['QSR']
 

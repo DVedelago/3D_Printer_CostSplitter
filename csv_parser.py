@@ -39,18 +39,24 @@ filtered_pddf = pddf.loc[(pddf['Date'] >= date_from_datetype) & (pddf['Date'] < 
 ######################################################
 
 grand_total = 0
-for index, row in filtered_pddf.iterrows():
-    for res_line in rld.res_lines_list:
-        if row['Owner'] in res_line['owners']:
-            print("porcodio")
 
-
+for index, row in filtered_pddf.iterrows():                                                 # cycle through the dataframe row by row;
+    for res_line in rld.res_lines_list:                                                     # cycle through the research lines and their users;
+        if row['Owner'] in res_line['owners']:                                              # check if the Owner match a research line;
+            res_line['total_cm3'] = res_line["total_cm3"]+row['ABS']+row['QSR']             # sum the materials to the research line's accumulator;
+            
     grand_total = grand_total+row['ABS']+row['QSR']
 
 
 
 
 # print(filtered_pddf)
+print('***************')
 print(grand_total)
+
+print('***************')
+for res_line2 in rld.res_lines_list:
+    print('***************')
+    print(res_line2['total_cm3'])
 
 

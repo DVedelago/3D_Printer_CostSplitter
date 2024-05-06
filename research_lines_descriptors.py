@@ -6,7 +6,40 @@ using [Data_Structure] to assign Users to PIs
 
 
 """
+# ################################################
+# class ResearchLine:                            
+                                               
+#     def __init__(self, owners[], cm3) -> None: 
+#         self.owners = owners[]                 
+#         self.cm3_usage = cm3                   
 
+# ################################################
+
+
+
+# hhcm_owners = [
+#     'Akash_Singh',
+#     'aksingh',
+#     'cburchielli',
+#     'edb',
+#     'ggarofalo',
+#     'Giovanni_Garofalo',
+#     'gsofia',
+#     'Ioannis_Sarakoglou',
+#     'Jorn_Malzahn',
+#     'LBaccelliere',
+#     'Navvab',
+#     'Pietro_Gurnari',
+#     'scarrozzo',
+#     'Yifan',
+#     'yizhang'
+# ]
+
+
+
+#HHCM_Tsagarakis = ResearchLine(hhcm_owners, 0)
+
+###############################################################################################################################################
 
 HHCM_Tsagarakis = {
     'owners': [

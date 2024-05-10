@@ -1,17 +1,26 @@
 import pandas as pd
 import datetime as dt
+import glob
+import os
 import research_lines_descriptors as rld
 
-#print(rld.res_lines_list)
+
+joined_files = os.path.join('.\\', "job_hystory*.csv")
+joined_list = glob.glob(joined_files)
+
+merged_dataframe = pd.concat(map(pd.read_csv, joined_list), ignore_index=True).to_csv('printers_hystories.csv', index=False)
 
 #################################################
 # Reading the dataset with Pandas read_* method #
 #################################################
 
-csvfile = pd.read_csv('job_history.csv', delimiter=';', parse_dates=["Completed"])
+csvfile = pd.read_csv('printers_hystories.csv', delimiter=';', parse_dates=["Completed"])
+
 
 # Rename the column
-csvfile = csvfile.rename(columns={"Completed": "Date", "Model Material 1 Usage": "ABS", "Support Material 1 Usage": "QSR"})
+csvfile = csvfile.rename(columns={"Completed":                  "Date",
+                                   "Model Material 1 Usage":    "ABS", 
+                                   "Support Material 1 Usage":  "QSR"})
 #csvfile = 
 ########################################################
 # Creating DataFrame selecting only the columns needed #
@@ -59,4 +68,4 @@ for res_line2 in rld.res_lines_list:
     print('***************')
     print(res_line2['total_cm3'])
 
-
+ 

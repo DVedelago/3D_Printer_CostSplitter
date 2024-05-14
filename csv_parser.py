@@ -2,26 +2,38 @@ import pandas as pd
 import datetime as dt
 import glob
 import os
+from pathlib import Path
 import research_lines_descriptors as rld
 
 
-joined_files = os.path.join('.\\', "job_hystory*.csv")
-joined_list = glob.glob(joined_files)
+local_folder = Path("./")
+merged_csv_filename = 'printers_hystories.csv'
 
-merged_dataframe = pd.concat(map(pd.read_csv, joined_list), ignore_index=True).to_csv('printers_hystories.csv', index=False)
+
+
+joined_files = os.path.join(local_folder, '*.csv')
+print(type(joined_files))
+
+joined_list = glob.glob(joined_files)
+print(type(joined_list))
+
+print(joined_list)
+
+merged_dataframe = pd.concat(map(pd.read_csv(), joined_list), ignore_index=True).to_csv(merged_csv_filename, index=False)
 
 #################################################
 # Reading the dataset with Pandas read_* method #
 #################################################
 
-csvfile = pd.read_csv('printers_hystories.csv', delimiter=';', parse_dates=["Completed"])
+csvfile = pd.read_csv(merged_csv_filename, delimiter=';', parse_dates=["Completed"])
 
 
 # Rename the column
 csvfile = csvfile.rename(columns={"Completed":                  "Date",
                                    "Model Material 1 Usage":    "ABS", 
                                    "Support Material 1 Usage":  "QSR"})
-#csvfile = 
+
+
 ########################################################
 # Creating DataFrame selecting only the columns needed #
 ########################################################
@@ -67,5 +79,3 @@ print('***************')
 for res_line2 in rld.res_lines_list:
     print('***************')
     print(res_line2['total_cm3'])
-
- 

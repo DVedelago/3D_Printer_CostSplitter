@@ -4,34 +4,37 @@ import glob
 import os
 from pathlib import Path
 import research_lines_descriptors as rld
-
+import os 
 
 local_folder = Path("./")
-merged_csv_filename = 'printers_hystories.csv'
 
-
+merged_csv_filename = 'merged/printers_hystories.csv'
 
 joined_files = os.path.join(local_folder, '*.csv')
-print(type(joined_files))
-
 joined_list = glob.glob(joined_files)
-print(type(joined_list))
 
-print(joined_list)
+def read_csv_alias(f):
+    return pd.read_csv(f, sep=";")
 
-merged_dataframe = pd.concat(map(pd.read_csv(), joined_list), ignore_index=True).to_csv(merged_csv_filename, index=False)
+# merged dataframe
+merged_dataframe = pd.concat(map(read_csv_alias, joined_list), ignore_index=True)
+
+# merged csv
+merged_dataframe.to_csv(merged_csv_filename, index=False, sep=";")
+
+
 
 #################################################
 # Reading the dataset with Pandas read_* method #
 #################################################
 
-csvfile = pd.read_csv(merged_csv_filename, delimiter=';', parse_dates=["Completed"])
-
+csvfile = pd.read_csv(merged_csv_filename, sep=';', parse_dates=["Completed"])
 
 # Rename the column
 csvfile = csvfile.rename(columns={"Completed":                  "Date",
                                    "Model Material 1 Usage":    "ABS", 
                                    "Support Material 1 Usage":  "QSR"})
+
 
 
 ########################################################
@@ -43,6 +46,8 @@ pddf = pd.DataFrame(
                     columns=["Owner", "ABS", "QSR", "Date"],
                     )
 
+
+
 ##########################################
 # Filtering by input[date] the DataFrame #
 ##########################################
@@ -53,6 +58,7 @@ print(date_from_datetype)
 
 
 filtered_pddf = pddf.loc[(pddf['Date'] >= date_from_datetype) & (pddf['Date'] < pd.to_datetime("today"))]
+
 
 
 ######################################################
@@ -68,14 +74,15 @@ for index, row in filtered_pddf.iterrows():                                     
             
     grand_total = grand_total+row['ABS']+row['QSR']
 
-
-
-
-# print(filtered_pddf)
-print('***************')
-print(grand_total)
+###################
+# Printing values #
+###################
 
 print('***************')
+print("Grand Total = ", grand_total)
+print('***************')
+
 for res_line2 in rld.res_lines_list:
     print('***************')
     print(res_line2['total_cm3'])
+    print('***************')

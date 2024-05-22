@@ -59,7 +59,8 @@ HHCM_Tsagarakis = {
         'Yifan',
         'yizhang'
     ],
-    'total_cm3': 0
+    'total_cm3': 0,
+    'res_line_name': "HHCM Tsagarakis"
 }
 
 
@@ -67,12 +68,14 @@ ADVR_Caldwell = {
     'owners': [
         'alperen_acemoglu',
         'asantangelo',
+        'cabello',
         'Carlo_Rizzardo',
         'cdinatali',
         'DPARK',
         'Federico_Mariano',
         'federico_allione',
         'fnozadheravi',
+        'Farshad_NH',
         'Jesús_Ortiz',
         'JOrtiz',
         'ksawant',
@@ -81,7 +84,8 @@ ADVR_Caldwell = {
         'rgagliardi',
         'Roberto_Pitzalis'
     ],
-    'total_cm3': 0
+    'total_cm3': 0,
+    'res_line_name': "ADVR Caldwell"
 }
 
 ADVRF_Cordasco = {
@@ -90,7 +94,8 @@ ADVRF_Cordasco = {
         'dvedelago',
         'mmigliorini'
     ],
-    'total_cm3': 0
+    'total_cm3': 0,
+    'res_line_name': "ADVRF Cordasco"
 }
 
 DLS_Semini = {
@@ -102,7 +107,8 @@ DLS_Semini = {
         'Matteo_Villa',
         'mavilla'
     ],
-    'total_cm3': 0
+    'total_cm3': 0,
+    'res_line_name': "DLS Semini"
 }
 
 HRII_Ajoudani = {
@@ -111,10 +117,13 @@ HRII_Ajoudani = {
         'Fran_Ruiz',
         'pbalatti',
         'ggiardini',
+        'Mattia_Leonori',
         'Pietro_Balatti',
         'fruiz'
     ],
-    'total_cm3': 0
+    'total_cm3': 0,
+    'res_line_name': "HRII Ajoudani"
+
 }
 
 IRF_Canali = {
@@ -123,7 +132,8 @@ IRF_Canali = {
         'carlo_canali',
         'Lizhou_Xu'
     ],
-    'total_cm3': 0
+    'total_cm3': 0,
+    'res_line_name': "IRF Canali"
 }
 
 res_lines_list = [
@@ -134,3 +144,12 @@ res_lines_list = [
     ADVR_Caldwell,
     HHCM_Tsagarakis
 ]
+
+res_lines_percentages = {
+    'IRF_Canali'      : 0,
+    'HRII_Ajoudani'   : 0,
+    'DLS_Semini'      : 0,
+    'ADVRF_Cordasco'  : 0,
+    'ADVR_Caldwell'   : 0,
+    'HHCM_Tsagarakis' : 0
+}

@@ -4,7 +4,6 @@ import glob
 import os
 from pathlib import Path
 import research_lines_descriptors as rld
-import os 
 
 local_folder = Path("./")
 
@@ -13,6 +12,7 @@ merged_csv_filename = 'merged/printers_hystories.csv'
 joined_files = os.path.join(local_folder, '*.csv')
 joined_list = glob.glob(joined_files)
 
+# pd.read_csv alias to be used in map function
 def read_csv_alias(f):
     return pd.read_csv(f, sep=";")
 
@@ -65,13 +65,20 @@ filtered_pddf = pddf.loc[(pddf['Date'] >= date_from_datetype) & (pddf['Date'] < 
 # Summing up the grand total of material consumption #
 ######################################################
 
+# percentage on grand total;
+def is_what_percent_of(num_a, num_b):                                                       
+    try:
+        return (num_a / num_b) * 100
+    except ZeroDivisionError:
+        return 0
+
 grand_total = 0
 
 for index, row in filtered_pddf.iterrows():                                                 # cycle through the dataframe row by row;
     for res_line in rld.res_lines_list:                                                     # cycle through the research lines and their users;
         if row['Owner'] in res_line['owners']:                                              # check if the Owner match a research line;
             res_line['total_cm3'] = res_line["total_cm3"]+row['ABS']+row['QSR']             # sum the materials to the research line's accumulator;
-            
+
     grand_total = grand_total+row['ABS']+row['QSR']
 
 ###################
@@ -79,10 +86,14 @@ for index, row in filtered_pddf.iterrows():                                     
 ###################
 
 print('***************')
-print("Grand Total = ", grand_total)
+print("Grand Total = ", "{:.3f}".format(grand_total))
 print('***************')
 
 for res_line2 in rld.res_lines_list:
-    print('***************')
-    print(res_line2['total_cm3'])
-    print('***************')
+    
+    #rld.res_lines_percentages |= {res_line2['res_line_name']: ( is_what_percent_of(res_line2['total_cm3'], grand total))}
+    
+    print('***************') 
+    print(res_line2['res_line_name'], ':', "{:.3f}".format(res_line2['total_cm3']))
+    
+print('***************')

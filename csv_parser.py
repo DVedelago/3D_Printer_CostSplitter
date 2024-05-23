@@ -95,8 +95,9 @@ for index, row in filtered_pddf.iterrows():                                     
 ###################
 
 print('***************')
-print("Grand Total = ", "{:.3f}".format(grand_total))
+print("Grand Total : ", "{:.3f}".format(grand_total))
 print('***************')
+print()
 
 for res_line2 in rld.res_lines_list:
     

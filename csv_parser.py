@@ -1,3 +1,10 @@
+
+# Rev 1.0 #
+
+##################
+# Import Modules #
+##################
+
 import pandas as pd
 import datetime as dt
 import glob
@@ -81,6 +88,8 @@ for index, row in filtered_pddf.iterrows():                                     
 
     grand_total = grand_total+row['ABS']+row['QSR']
 
+
+
 ###################
 # Printing values #
 ###################
@@ -91,9 +100,9 @@ print('***************')
 
 for res_line2 in rld.res_lines_list:
     
-    #rld.res_lines_percentages |= {res_line2['res_line_name']: ( is_what_percent_of(res_line2['total_cm3'], grand total))}
+    print('***************')
     
-    print('***************') 
     print(res_line2['res_line_name'], ':', "{:.3f}".format(res_line2['total_cm3']))
+    print("{0:.2f}%".format(is_what_percent_of(res_line2['total_cm3'], grand_total)), 'of Grand Total')
     
 print('***************')

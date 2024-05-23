@@ -51,10 +51,12 @@ HHCM_Tsagarakis = {
         'Giovanni_Garofalo',
         'gsofia',
         'Ioannis_Sarakoglou',
+        'Jiang',
         'Jorn_Malzahn',
         'LBaccelliere',
         'Navvab',
         'Pietro_Gurnari',
+        'pgurnari',
         'scarrozzo',
         'Yifan',
         'yizhang'
@@ -69,6 +71,7 @@ ADVR_Caldwell = {
         'alperen_acemoglu',
         'asantangelo',
         'cabello',
+        'Carola_Abello',
         'Carlo_Rizzardo',
         'cdinatali',
         'DPARK',
@@ -79,10 +82,13 @@ ADVR_Caldwell = {
         'Jesús_Ortiz',
         'JOrtiz',
         'ksawant',
+        'lorenzo_ceppari',
         'msposito',
+        'mlahoud',
         'psencandan',
         'rgagliardi',
-        'Roberto_Pitzalis'
+        'Roberto_Pitzalis',
+        'rpitzalis'
     ],
     'total_cm3': 0,
     'res_line_name': "ADVR Caldwell"
@@ -92,7 +98,8 @@ ADVRF_Cordasco = {
     'owners': [
         'Yussef_Hassanien',
         'dvedelago',
-        'mmigliorini'
+        'mmigliorini',
+        '--'                    # cadbottle, axis calib and maintenance prints
     ],
     'total_cm3': 0,
     'res_line_name': "ADVRF Cordasco"
@@ -105,7 +112,10 @@ DLS_Semini = {
         'VBarasuol',
         'Sinan_Emre',
         'Matteo_Villa',
-        'mavilla'
+        'mavilla',
+        'semre',
+        'Seyed_Amir_Mohamad_Hosseini_Rad',
+        'isabe'
     ],
     'total_cm3': 0,
     'res_line_name': "DLS Semini"
@@ -119,7 +129,8 @@ HRII_Ajoudani = {
         'ggiardini',
         'Mattia_Leonori',
         'Pietro_Balatti',
-        'fruiz'
+        'fruiz',
+        'rarbaud'
     ],
     'total_cm3': 0,
     'res_line_name': "HRII Ajoudani"
@@ -130,11 +141,15 @@ IRF_Canali = {
     'owners':[
         'Iacopo_Longinotti',
         'carlo_canali',
-        'Lizhou_Xu'
+        'CCanali',
+        'Lizhou_Xu',
+        'khelifa_baizid'
     ],
     'total_cm3': 0,
     'res_line_name': "IRF Canali"
 }
+
+
 
 res_lines_list = [
     IRF_Canali,
@@ -144,12 +159,3 @@ res_lines_list = [
     ADVR_Caldwell,
     HHCM_Tsagarakis
 ]
-
-res_lines_percentages = {
-    'IRF_Canali'      : 0,
-    'HRII_Ajoudani'   : 0,
-    'DLS_Semini'      : 0,
-    'ADVRF_Cordasco'  : 0,
-    'ADVR_Caldwell'   : 0,
-    'HHCM_Tsagarakis' : 0
-}

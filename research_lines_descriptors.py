@@ -88,7 +88,9 @@ ADVR_Caldwell = {
         'psencandan',
         'rgagliardi',
         'Roberto_Pitzalis',
-        'rpitzalis'
+        'rpitzalis',
+        'yonas tefera',
+        'Yaesol_kim'
     ],
     'total_cm3': 0,
     'res_line_name': "ADVR Caldwell"

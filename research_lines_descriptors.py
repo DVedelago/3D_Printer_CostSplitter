@@ -51,18 +51,15 @@ HHCM_Tsagarakis = {
         'Giovanni_Garofalo',
         'gsofia',
         'Ioannis_Sarakoglou',
-        'Jiang',
         'Jorn_Malzahn',
         'LBaccelliere',
         'Navvab',
         'Pietro_Gurnari',
-        'pgurnari',
         'scarrozzo',
         'Yifan',
         'yizhang'
     ],
-    'total_cm3': 0,
-    'res_line_name': "HHCM Tsagarakis"
+    'total_cm3': 0
 }
 
 
@@ -70,41 +67,30 @@ ADVR_Caldwell = {
     'owners': [
         'alperen_acemoglu',
         'asantangelo',
-        'cabello',
-        'Carola_Abello',
         'Carlo_Rizzardo',
         'cdinatali',
         'DPARK',
         'Federico_Mariano',
         'federico_allione',
         'fnozadheravi',
-        'Farshad_NH',
         'Jesús_Ortiz',
         'JOrtiz',
         'ksawant',
-        'lorenzo_ceppari',
         'msposito',
-        'mlahoud',
         'psencandan',
         'rgagliardi',
-        'Roberto_Pitzalis',
-        'rpitzalis',
-        'yonas tefera',
-        'Yaesol_kim'
+        'Roberto_Pitzalis'
     ],
-    'total_cm3': 0,
-    'res_line_name': "ADVR Caldwell"
+    'total_cm3': 0
 }
 
 ADVRF_Cordasco = {
     'owners': [
         'Yussef_Hassanien',
         'dvedelago',
-        'mmigliorini',
-        '--'                    # cadbottle, axis calib and maintenance prints
+        'mmigliorini'
     ],
-    'total_cm3': 0,
-    'res_line_name': "ADVRF Cordasco"
+    'total_cm3': 0
 }
 
 DLS_Semini = {
@@ -114,13 +100,9 @@ DLS_Semini = {
         'VBarasuol',
         'Sinan_Emre',
         'Matteo_Villa',
-        'mavilla',
-        'semre',
-        'Seyed_Amir_Mohamad_Hosseini_Rad',
-        'isabe'
+        'mavilla'
     ],
-    'total_cm3': 0,
-    'res_line_name': "DLS Semini"
+    'total_cm3': 0
 }
 
 HRII_Ajoudani = {
@@ -129,29 +111,23 @@ HRII_Ajoudani = {
         'Fran_Ruiz',
         'pbalatti',
         'ggiardini',
-        'Mattia_Leonori',
         'Pietro_Balatti',
-        'fruiz',
-        'rarbaud'
+        'fruiz'
     ],
-    'total_cm3': 0,
-    'res_line_name': "HRII Ajoudani"
-
+    'total_cm3': 0
 }
 
 IRF_Canali = {
     'owners':[
         'Iacopo_Longinotti',
         'carlo_canali',
-        'CCanali',
         'Lizhou_Xu',
-        'khelifa_baizid'
+        'fmanara',
+        'FMANARA',
+        'arditpoka'
     ],
-    'total_cm3': 0,
-    'res_line_name': "IRF Canali"
+    'total_cm3': 0
 }
-
-
 
 res_lines_list = [
     IRF_Canali,

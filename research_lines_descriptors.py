@@ -151,7 +151,10 @@ IRF_Canali = {
         'Lizhou_Xu',
         'khelifa_baizid',
         'ardit_poka',
-        'federico_manara'
+        'federico_manara',
+        'fmanara',
+        'FMANARA',
+        'arditpoka'
     ],
     'total_cm3': 0,
     'res_line_name': "IRF Canali"

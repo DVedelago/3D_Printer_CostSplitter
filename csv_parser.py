@@ -11,6 +11,7 @@ import glob
 import os
 from pathlib import Path
 import research_lines_descriptors as rld
+import sys
 
 local_folder = Path("./")
 
@@ -94,16 +95,22 @@ for index, row in filtered_pddf.iterrows():                                     
 # Printing values #
 ###################
 
-print('***************')
-print("Grand Total : ", "{:.3f}".format(grand_total))
-print('***************')
-print()
+original_stdout = sys.stdout
+with open('Cost_Split_Output.txt', 'w') as f:
+    sys.stdout = f
 
-for res_line2 in rld.res_lines_list:
-    
+    print()
     print('***************')
-    
-    print(res_line2['res_line_name'], ':', "{:.3f}".format(res_line2['total_cm3']))
-    print("{0:.2f}%".format(is_what_percent_of(res_line2['total_cm3'], grand_total)), 'of Grand Total')
-    
-print('***************')
+    print("Grand Total in cm^3 : ", "{:.3f}".format(grand_total))
+    print('***************')
+    print()
+
+    for res_line2 in rld.res_lines_list:
+        
+        print('***************')
+        
+        print(res_line2['res_line_name'], ':', "{:.3f}".format(res_line2['total_cm3']))
+        print("{0:.2f}%".format(is_what_percent_of(res_line2['total_cm3'], grand_total)), 'of Grand Total')
+        
+    print('***************')
+

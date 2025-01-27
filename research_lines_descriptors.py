@@ -91,6 +91,7 @@ ADVR_Caldwell = {
         'Roberto_Pitzalis',
         'rpitzalis',
         'yonas tefera',
+        'ytefera',
         'Yaesol_kim',
         'Donatien_Delehelle',
         'Donatien Delehelle',

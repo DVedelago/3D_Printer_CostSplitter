@@ -58,6 +58,7 @@ HHCM_Tsagarakis = {
         'Pietro_Gurnari',
         'pgurnari',
         'scarrozzo',
+        'sduddu',
         'Yifan',
         'yizhang'
     ],

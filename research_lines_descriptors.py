@@ -123,6 +123,7 @@ DLS_Semini = {
         'mavilla',
         'semre',
         'Seyed_Amir_Mohamad_Hosseini_Rad',
+        'A_Rad',
         'isabe'
     ],
     'total_cm3': 0,

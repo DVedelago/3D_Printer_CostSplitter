@@ -97,7 +97,6 @@ ADVR_Caldwell = {
         'Donatien Delehelle',
         'DDelehelle',
         'alibaba',           # This is still Donatien Delehelle, it's a temporary username
-        'nicolò_rizzato',
         'Lorenzo_dacierno' #beta - don't know the real username yet - DV
     ],
     'total_cm3': 0,
@@ -159,7 +158,8 @@ IRF_Canali = {
         'federico_manara',
         'fmanara',
         'FMANARA',
-        'arditpoka'
+        'arditpoka',
+        'nicolò_rizzato'
     ],
     'total_cm3': 0,
     'res_line_name': "IRF Canali"

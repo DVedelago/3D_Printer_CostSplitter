@@ -96,7 +96,9 @@ ADVR_Caldwell = {
         'Donatien_Delehelle',
         'Donatien Delehelle',
         'DDelehelle',
-        'alibaba'           # This is still Donatien Delehelle, it's a temporary username
+        'alibaba',           # This is still Donatien Delehelle, it's a temporary username
+        'nicolò_rizzato',
+        'Lorenzo_dacierno' #beta - don't know the real username yet - DV
     ],
     'total_cm3': 0,
     'res_line_name': "ADVR Caldwell"

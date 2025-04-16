@@ -46,6 +46,7 @@ HHCM_Tsagarakis = {
         'Akash_Singh',
         'aksingh',
         'cburchielli',
+        'Carlo_Rizzardo',
         'edb',
         'ggarofalo',
         'Giovanni_Garofalo',
@@ -60,7 +61,8 @@ HHCM_Tsagarakis = {
         'scarrozzo',
         'sduddu',
         'Yifan',
-        'yizhang'
+        'yizhang',
+        'chiara_castellani' # temporaneo, da vedere reale username, da controllare effettivo consumo, se troppo alto da spostare su altro budget
     ],
     'total_cm3': 0,
     'res_line_name': "HHCM Tsagarakis"
@@ -71,21 +73,18 @@ ADVR_Caldwell = {
     'owners': [
         'alperen_acemoglu',
         'asantangelo',
+        'ardit_poka',
         'cabello',
-        'Carola_Abello',
-        'Carlo_Rizzardo',
+        'Carola_Abello',        
         'cdinatali',
         'DPARK',
         'Federico_Mariano',
         'federico_allione',
-        'fnozadheravi',
-        'Farshad_NH',
         'Jesús_Ortiz',
         'JOrtiz',
         'ksawant',
         'lorenzo_ceppari',
         'msposito',
-        'mlahoud',
         'psencandan',
         'rgagliardi',
         'Roberto_Pitzalis',
@@ -97,7 +96,8 @@ ADVR_Caldwell = {
         'Donatien Delehelle',
         'DDelehelle',
         'alibaba',           # This is still Donatien Delehelle, it's a temporary username
-        'Lorenzo_dacierno' #beta - don't know the real username yet - DV
+        'Chiara_Falagario' # beta - not in the queue yet - DV  # Demattos
+        
     ],
     'total_cm3': 0,
     'res_line_name': "ADVR Caldwell"
@@ -147,19 +147,19 @@ HRII_Ajoudani = {
 
 }
 
-IRF_Canali = {
+IRF_Cannella = {
     'owners':[
         'Iacopo_Longinotti',
-        'carlo_canali',
-        'CCanali',
+        'fnozadheravi',
+        'Farshad_NH',
         'Lizhou_Xu',
         'khelifa_baizid',
-        'ardit_poka',
         'federico_manara',
         'fmanara',
         'FMANARA',
         'arditpoka',
-        'nicolò_rizzato'
+        'nicolò_rizzato',
+        'mlahoud'
     ],
     'total_cm3': 0,
     'res_line_name': "IRF Canali"
@@ -168,7 +168,7 @@ IRF_Canali = {
 
 
 res_lines_list = [
-    IRF_Canali,
+    IRF_Cannella,
     HRII_Ajoudani,
     DLS_Semini,
     ADVRF_Cordasco,

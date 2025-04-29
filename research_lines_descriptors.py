@@ -80,9 +80,7 @@ ADVR_Caldwell = {
         'DPARK',
         'Federico_Mariano',
         'federico_allione',
-        'federico_manara',
-        'fmanara',
-        'FMANARA',
+        'fmanara',        
         'Jesús_Ortiz',
         'JOrtiz',
         'ksawant',
@@ -143,7 +141,8 @@ HRII_Ajoudani = {
         'Mattia_Leonori',
         'Pietro_Balatti',
         'fruiz',
-        'rarbaud'
+        'rarbaud',
+        'tspigno'
     ],
     'total_cm3': 0,
     'res_line_name': "HRII Ajoudani"

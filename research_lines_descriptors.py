@@ -126,7 +126,8 @@ DLS_Semini = {
         'semre',
         'Seyed_Amir_Mohamad_Hosseini_Rad',
         'A_Rad',
-        'isabe'
+        'isabe',
+        'ksuryavanshi'
     ],
     'total_cm3': 0,
     'res_line_name': "DLS Semini"

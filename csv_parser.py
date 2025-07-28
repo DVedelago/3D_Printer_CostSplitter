@@ -89,11 +89,13 @@ for index, row in filtered_pddf.iterrows():                                     
 
     grand_total = grand_total+row['ABS']+row['QSR']
 
-
+# TODO: check if prints are started in the weekend
 
 ###################
 # Printing values #
 ###################
+
+# TODO: add date-time to txt out file name
 
 original_stdout = sys.stdout
 with open('Cost_Split_Output.txt', 'w') as f:

@@ -95,6 +95,7 @@ ADVR_Caldwell = {
         'Yaesol_kim',
         'Donatien_Delehelle',
         'Donatien Delehelle',
+        'DonDelehelle',
         'DDelehelle',
         'alibaba',           # This is still Donatien Delehelle, it's a temporary username
         'Chiara_Falagario' # beta - not in the queue yet - DV  # Demattos
@@ -126,6 +127,7 @@ DLS_Semini = {
         'semre',
         'Seyed_Amir_Mohamad_Hosseini_Rad',
         'A_Rad',
+        'arad',
         'isabe',
         'ksuryavanshi'
     ],
@@ -162,7 +164,7 @@ IRF_Cannella = {
         'mlahoud'
     ],
     'total_cm3': 0,
-    'res_line_name': "IRF Canali"
+    'res_line_name': "IRF Cannella"
 }
 
 

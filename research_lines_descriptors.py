@@ -74,6 +74,7 @@ ADVR_Caldwell = {
         'alperen_acemoglu',
         'asantangelo',
         'ardit_poka',
+        'arditpoka',
         'cabello',
         'Carola_Abello',        
         'cdinatali',
@@ -83,6 +84,7 @@ ADVR_Caldwell = {
         'fmanara',        
         'Jesús_Ortiz',
         'JOrtiz',
+        'Iacopo_Longinotti',
         'ksawant',
         'lorenzo_ceppari',
         'msposito',
@@ -154,12 +156,11 @@ HRII_Ajoudani = {
 
 IRF_Cannella = {
     'owners':[
-        'Iacopo_Longinotti',
+        
         'fnozadheravi',
         'Farshad_NH',
         'Lizhou_Xu',
         'khelifa_baizid',        
-        'arditpoka',
         'nicolò_rizzato',
         'mlahoud'
     ],

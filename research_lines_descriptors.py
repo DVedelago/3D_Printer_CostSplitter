@@ -62,7 +62,9 @@ HHCM_Tsagarakis = {
         'sduddu',
         'Yifan',
         'yizhang',
-        'chiara_castellani' # temporaneo, da vedere reale username, da controllare effettivo consumo, se troppo alto da spostare su altro budget
+        'chiara_castellani',
+        'Oussama_Alyounes' # temporaneo, da vedere reale username, da controllare effettivo consumo, se troppo alto da spostare su altro budget
+
     ],
     'total_cm3': 0,
     'res_line_name': "HHCM Tsagarakis"

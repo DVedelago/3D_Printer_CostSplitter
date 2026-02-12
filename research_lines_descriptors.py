@@ -63,7 +63,7 @@ HHCM_Tsagarakis = {
         'Yifan',
         'yizhang',
         'chiara_castellani',
-        'Oussama_Alyounes' # temporaneo, da vedere reale username, da controllare effettivo consumo, se troppo alto da spostare su altro budget
+        'Oussama_Alyounes' 
 
     ],
     'total_cm3': 0,
@@ -102,7 +102,8 @@ ADVR_Caldwell = {
         'DonDelehelle',
         'DDelehelle',
         'alibaba',           # This is still Donatien Delehelle, it's a temporary username
-        'Chiara_Falagario' # beta - not in the queue yet - DV  # Demattos
+        'Chiara_Falagario',  # beta - not in the queue yet - DV  # Demattos
+        'Diego_Velasquez'   # Demattos
         
     ],
     'total_cm3': 0,

@@ -151,7 +151,8 @@ HRII_Ajoudani = {
         'Pietro_Balatti',
         'fruiz',
         'rarbaud',
-        'tspigno'
+        'tspigno',
+        'Andrea_Fortuna'
     ],
     'total_cm3': 0,
     'res_line_name': "HRII Ajoudani"

@@ -62,7 +62,7 @@ HHCM_Tsagarakis = {
         'sduddu',
         'Yifan',
         'yizhang',
-        'chiara_castellani',
+        'Chiara_Castellani',
         'Oussama_Alyounes' 
 
     ],
@@ -80,6 +80,7 @@ ADVR_Caldwell = {
         'cabello',
         'Carola_Abello',        
         'cdinatali',
+        'Christian_Di_natali'
         'DPARK',
         'Federico_Mariano',
         'federico_allione',
@@ -135,8 +136,12 @@ DLS_Semini = {
         'Seyed_Amir_Mohamad_Hosseini_Rad',
         'A_Rad',
         'arad',
+        'Amir_Rad',
         'isabe',
-        'ksuryavanshi'
+        'ksuryavanshi',
+        'Kartik_Suryavanshi',
+        'moudallal',
+        'Gaston_de_Boigne'
     ],
     'total_cm3': 0,
     'res_line_name': "DLS Semini"

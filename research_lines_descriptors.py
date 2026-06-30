@@ -106,7 +106,8 @@ ADVR_Caldwell = {
         'alibaba',           # This is still Donatien Delehelle, it's a temporary username
         'Chiara_Falagario',  # beta - not in the queue yet - DV  # Demattos
         'Diego_Velasquez',   # Demattos
-        'Matteo_Musso'       # XoLab
+        'Matteo_Musso',      # XoLab
+        'mdjabri'            # mustapha redouane djabri
         
     ],
     'total_cm3': 0,

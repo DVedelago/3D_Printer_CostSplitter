@@ -17,6 +17,7 @@ using [Data_Structure] to assign Users to PIs
 
 
 
+
 # hhcm_owners = [
 #     'Akash_Singh',
 #     'aksingh',
@@ -160,7 +161,9 @@ HRII_Ajoudani = {
         'fruiz',
         'rarbaud',
         'tspigno',
-        'Andrea_Fortuna'
+        'Andrea_Fortuna',
+        'Irodin',
+        'ivan_Rodin'
     ],
     'total_cm3': 0,
     'res_line_name': "HRII Ajoudani"

@@ -15,7 +15,10 @@ import sys
 
 local_folder = Path("./")
 
-merged_csv_filename = 'printers_histories.csv'
+if not os.path.exists("./merged"):
+    os.makedirs("./merged")
+
+merged_csv_filename = 'merged/printers_histories.csv'
 
 joined_files = os.path.join(local_folder, '*.csv')
 joined_list = glob.glob(joined_files)
@@ -43,8 +46,6 @@ csvfile = csvfile.rename(columns={"Completed":                  "Date",
                                    "Model Material 1 Usage":    "ABS", 
                                    "Support Material 1 Usage":  "QSR"})
 
-
-
 ########################################################
 # Creating DataFrame selecting only the columns needed #
 ########################################################
@@ -53,8 +54,6 @@ pddf = pd.DataFrame(
                     data=csvfile, 
                     columns=["Owner", "ABS", "QSR", "Date"],
                     )
-
-
 
 ##########################################
 # Filtering by input[date] the DataFrame #
@@ -66,8 +65,6 @@ print(date_from_datetype)
 
 
 filtered_pddf = pddf.loc[(pddf['Date'] >= date_from_datetype) & (pddf['Date'] < pd.to_datetime("today"))]
-
-
 
 ######################################################
 # Summing up the grand total of material consumption #
@@ -115,8 +112,6 @@ else: print("All users match!")
 # Main routine                                       #
 ######################################################
 
-
-
 for index, row in filtered_pddf.iterrows():                                                 # cycle through the dataframe row by row;
     for res_line in rld.res_lines_list:                                                     # cycle through the research lines and their users;
         if row['Owner'] in res_line['owners']:                                              # check if the Owner match a research line;
@@ -137,7 +132,7 @@ for index, row in filtered_pddf.iterrows():                                     
 
 original_stdout = sys.stdout
 filename = 'Cost_Split_Output-' + dt.datetime.now().strftime("%F_%H-%M")
-with open(filename, 'w') as f:
+with open(filename, 'x') as f:
     sys.stdout = f
 
     print()

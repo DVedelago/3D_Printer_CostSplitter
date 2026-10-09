@@ -15,7 +15,7 @@ import sys
 
 local_folder = Path("./")
 
-merged_csv_filename = 'merged/printers_hystories.csv'
+merged_csv_filename = 'merged/printers_histories.csv'
 
 joined_files = os.path.join(local_folder, '*.csv')
 joined_list = glob.glob(joined_files)
@@ -80,14 +80,51 @@ def is_what_percent_of(num_a, num_b):
     except ZeroDivisionError:
         return 0
 
+######################################################
+# Variables to store output                          #
+######################################################
+
 grand_total = 0
+
+unknown_users = []
+
+big_list_of_owners = []
+
+for r in rld.res_lines_list:
+    for u in r['owners']:
+        big_list_of_owners.append(u)
+
+for i, userrow in filtered_pddf.iterrows():
+    if userrow['Owner'] not in big_list_of_owners:
+        if userrow['Owner'] not in unknown_users:
+            unknown_users.append(userrow['Owner'])
+
+# print(big_list_of_owners)
+
+if unknown_users:    
+    print("**********")
+    print("UNKNOWN USERS: ")
+    print(unknown_users)
+    print("**********")
+
+else: print("All users match!")
+
+######################################################
+# Main routine                                       #
+######################################################
+
+
 
 for index, row in filtered_pddf.iterrows():                                                 # cycle through the dataframe row by row;
     for res_line in rld.res_lines_list:                                                     # cycle through the research lines and their users;
         if row['Owner'] in res_line['owners']:                                              # check if the Owner match a research line;
             res_line['total_cm3'] = res_line["total_cm3"]+row['ABS']+row['QSR']             # sum the materials to the research line's accumulator;
+        
+        
 
+        
     grand_total = grand_total+row['ABS']+row['QSR']
+
 
 # TODO: check if prints are started in the weekend
 
@@ -98,7 +135,8 @@ for index, row in filtered_pddf.iterrows():                                     
 # TODO: add date-time to txt out file name
 
 original_stdout = sys.stdout
-with open('Cost_Split_Output.txt', 'w') as f:
+filename = 'Cost_Split_Output-' + dt.datetime.now().strftime("%F_%H-%M")
+with open(filename, 'w') as f:
     sys.stdout = f
 
     print()

@@ -86,20 +86,22 @@ def is_what_percent_of(num_a, num_b):
 
 grand_total = 0
 
+# list of unknown_users
 unknown_users = []
 
-big_list_of_owners = []
+# merge all users in a single list to compare against the printers histories CSV
+big_list_of_owners = [] 
 
+# creation of big_list_of_owners
 for r in rld.res_lines_list:
     for u in r['owners']:
         big_list_of_owners.append(u)
 
+# creation of unknown_users list
 for i, userrow in filtered_pddf.iterrows():
     if userrow['Owner'] not in big_list_of_owners:
         if userrow['Owner'] not in unknown_users:
             unknown_users.append(userrow['Owner'])
-
-# print(big_list_of_owners)
 
 if unknown_users:    
     print("**********")
@@ -132,7 +134,6 @@ for index, row in filtered_pddf.iterrows():                                     
 # Printing values #
 ###################
 
-# TODO: add date-time to txt out file name
 
 original_stdout = sys.stdout
 filename = 'Cost_Split_Output-' + dt.datetime.now().strftime("%F_%H-%M")

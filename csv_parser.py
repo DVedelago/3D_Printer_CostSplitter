@@ -15,7 +15,7 @@ import sys
 
 local_folder = Path("./")
 
-merged_csv_filename = 'merged/printers_histories.csv'
+merged_csv_filename = 'printers_histories.csv'
 
 joined_files = os.path.join(local_folder, '*.csv')
 joined_list = glob.glob(joined_files)

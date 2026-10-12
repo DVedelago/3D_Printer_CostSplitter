@@ -108,6 +108,8 @@ if unknown_users:
 
 else: print("All users match!")
 
+print()
+
 ######################################################
 # Main routine                                       #
 ######################################################
@@ -129,9 +131,11 @@ for index, row in filtered_pddf.iterrows():                                     
 # Printing values #
 ###################
 
+if not os.path.exists("./output"):
+    os.makedirs("./output")
 
 original_stdout = sys.stdout
-filename = 'Cost_Split_Output-' + dt.datetime.now().strftime("%F_%H-%M")
+filename = 'output/Cost_Split_Output-' + dt.datetime.now().strftime("%F_%H-%M") + '.txt'
 with open(filename, 'x') as f:
     sys.stdout = f
 
@@ -149,4 +153,9 @@ with open(filename, 'x') as f:
         print("{0:.2f}%".format(is_what_percent_of(res_line2['total_cm3'], grand_total)), 'of Grand Total')
         
     print('***************')
+f.close()
+sys.stdout = sys.__stdout__
 
+print("[**************************************]")
+print("[ You can find the results in ./output ]")
+print("[**************************************]")
